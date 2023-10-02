@@ -1,0 +1,67 @@
+/* App Container */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+
+  /* Todo Item */
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+
+    /* Completed Task Styling */
+    &.completed {
+      text-decoration: line-through;
+      background-color: #e0e0e0;
+    }
+  }
+
+  /* Task List */
+  .task-list {
+    margin-top: 20px;
+  }
+
+  /* Input Field */
+  input[type='text'] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Add Button */
+  button.add-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  /* Delete and Complete Buttons */
+  button.delete-button,
+  button.complete-button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #d43f00;
+    }
+  }
+}
